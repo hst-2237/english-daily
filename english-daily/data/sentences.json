@@ -1,0 +1,294 @@
+{
+  "version": 1,
+  "note": "英式音标(RP)为人工校订，请按自己需要修改；tips 里的 type 可取：连读/失爆/同化/弱读/省音/语调/重音",
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "Could you give me a hand with this?",
+      "zh": "你能帮我个忙吗？",
+      "ipa_uk": "/kʊdʒuː ˈɡɪv mi ə ˈhænd wɪð ðɪs/",
+      "tips": [
+        { "type": "同化", "text": "Could you 中 /d/ + /j/ 融合成 /dʒ/，读起来像 \"库久\"。" },
+        { "type": "弱读", "text": "me 在句中弱读作 /mi/，a 弱读作 /ə/。" },
+        { "type": "语调", "text": "请求句用降调，句尾 this 收得干脆，别上扬。" },
+        { "type": "重音", "text": "重音落在 hand 和 this 上：give me a HAND with THIS。" }
+      ]
+    },
+    {
+      "id": "s02",
+      "text": "What do you want to do tonight?",
+      "zh": "你今晚想做什么？",
+      "ipa_uk": "/wɒt də juː ˈwɒntə ˈduː təˈnaɪt/",
+      "tips": [
+        { "type": "同化", "text": "do you 在口语里常缩成 /dʒə/，整句听着像 \"沃特亚\"。" },
+        { "type": "省音", "text": "want to 说快时变成 /ˈwɒntə/，t 直接并进 to 里。" },
+        { "type": "失爆", "text": "want 的 /t/ 遇到后面的 /t/（to），只做口型不出声。" },
+        { "type": "语调", "text": "特殊疑问句用降调，tonight 重读、往下走。" }
+      ]
+    },
+    {
+      "id": "s03",
+      "text": "I'm not sure I follow you.",
+      "zh": "我不太确定有没有听懂你的意思。",
+      "ipa_uk": "/aɪm nɒt ʃɔːr aɪ ˈfɒləʊ juː/",
+      "tips": [
+        { "type": "失爆", "text": "not 的 /t/ 后面跟 /ʃ/，t 不爆破，停顿一下直接发 sure。" },
+        { "type": "连读", "text": "sure I 连读成 /ˈʃɔːraɪ/，r 音要轻轻带出来。" },
+        { "type": "弱读", "text": "I 在这里不重读，读成短促的 /aɪ/，别拖长。" },
+        { "type": "语调", "text": "陈述句降调，句尾 you 稍微收一点，礼貌不生硬。" }
+      ]
+    },
+    {
+      "id": "s04",
+      "text": "Would you mind speaking a little slower?",
+      "zh": "你介意说慢一点吗？",
+      "ipa_uk": "/wʊdʒuː ˈmaɪnd ˈspiːkɪŋ ə ˈlɪtl̩ ˈsləʊə/",
+      "tips": [
+        { "type": "同化", "text": "Would you → /wʊdʒuː/，/d/ + /j/ 变 /dʒ/。" },
+        { "type": "失爆", "text": "mind 的 /d/ 在 speaking 前失去爆破，只做口型。" },
+        { "type": "省音", "text": "little 的 /t/ 常读成喉塞音 /ʔ/，甚至听不出 t。" },
+        { "type": "重音", "text": "mind 和 slower 重读，语气才显得委婉。" }
+      ]
+    },
+    {
+      "id": "s05",
+      "text": "Let me think about it.",
+      "zh": "让我想一想。",
+      "ipa_uk": "/let mi ˈθɪŋk əˈbaʊt ɪt/",
+      "tips": [
+        { "type": "失爆", "text": "let 的 /t/ 遇 me 不爆破，干脆地停在 /t/ 的口型上。" },
+        { "type": "连读", "text": "about it 连读成 /əˈbaʊtɪt/，t 从词尾滑到词首的 /ɪ/。" },
+        { "type": "重音", "text": "think 重读，about 次重读，it 轻轻带过。" },
+        { "type": "语调", "text": "降调收尾，表示「我需要时间」，不是说「我拒绝」。" }
+      ]
+    },
+    {
+      "id": "s06",
+      "text": "It's been a long time, hasn't it?",
+      "zh": "好久不见了。",
+      "ipa_uk": "/ɪts biːn ə ˈlɒŋ ˈtaɪm ˈhæznt ɪt/",
+      "tips": [
+        { "type": "连读", "text": "been a 连读 /ˈbiːnə/，n 直接接到 a 上。" },
+        { "type": "连读", "text": "hasn't it 连读成 /ˈhæzntɪt/，t 和 it 的 /ɪ/ 拼在一起。" },
+        { "type": "同化", "text": "long 的 /ŋ/ 遇到 time 的 /t/，/ŋ/ 会往 /n/ 靠，读作 /lɒŋ taɪm/ 更自然。" },
+        { "type": "语调", "text": "反义疑问句尾 it 用升调，表示「对吧？」。" }
+      ]
+    },
+    {
+      "id": "s07",
+      "text": "Take care of yourself.",
+      "zh": "照顾好自己。",
+      "ipa_uk": "/teɪk ˈkeər əv jɔːˈself/",
+      "tips": [
+        { "type": "连读", "text": "care of 连读 /ˈkeərəv/，英音的 r 只在元音前发音。" },
+        { "type": "失爆", "text": "take 的 /k/ 在 care 的 /k/ 前只做口型，不送气。" },
+        { "type": "重音", "text": "yourself 重音在 self 上，读作 /jɔːˈself/。" },
+        { "type": "语调", "text": "叮嘱语气，降调、放慢，显得温暖。" }
+      ]
+    },
+    {
+      "id": "s08",
+      "text": "I'll be there in a minute.",
+      "zh": "我马上就到。",
+      "ipa_uk": "/aɪl bi ðeər ɪn ə ˈmɪnɪt/",
+      "tips": [
+        { "type": "连读", "text": "there in a 连读成 /ðeərɪnə/，三个词几乎连成一串。" },
+        { "type": "弱读", "text": "be 弱读作 /bi/，a 弱读作 /ə/。" },
+        { "type": "重音", "text": "minute 重音在第一音节 /ˈmɪnɪt/，别读成 mi-NUTE。" },
+        { "type": "语调", "text": "整句降调，语气轻快，表示「很快」。" }
+      ]
+    },
+    {
+      "id": "s09",
+      "text": "Could I have a word with you?",
+      "zh": "能跟你聊两句吗？",
+      "ipa_uk": "/kʊd aɪ həv ə ˈwɜːd wɪð juː/",
+      "tips": [
+        { "type": "连读", "text": "Could I 连读 /ˈkʊdaɪ/，d 直接接到 aɪ。" },
+        { "type": "弱读", "text": "have 在句中弱读 /həv/，h 常常几乎不发音。" },
+        { "type": "失爆", "text": "word 的 /d/ 在 with 前失去爆破。" },
+        { "type": "语调", "text": "一般疑问句用升调，句尾 you 上扬。" }
+      ]
+    },
+    {
+      "id": "s10",
+      "text": "That's exactly what I mean.",
+      "zh": "这正是我的意思。",
+      "ipa_uk": "/ðæts ɪɡˈzæktli wɒt aɪ ˈmiːn/",
+      "tips": [
+        { "type": "连读", "text": "that's exactly 连读 /ðætsɪɡˈzæktli/，ts 和 ɪ 相接。" },
+        { "type": "重音", "text": "exactly 重音在 /zæk/ 上，第一个音节很轻。" },
+        { "type": "失爆", "text": "exactly 的 /t/ 在 /l/ 前可以轻读成 /ʔ/ 或直接省掉。" },
+        { "type": "语调", "text": "强调句，mean 重读并降调，语气肯定。" }
+      ]
+    },
+    {
+      "id": "s11",
+      "text": "I'd rather stay at home tonight.",
+      "zh": "我今晚宁愿待在家里。",
+      "ipa_uk": "/aɪd ˈrɑːðə steɪ ət həʊm təˈnaɪt/",
+      "tips": [
+        { "type": "连读", "text": "stay at 连读 /ˈsteɪjət/，中间带一个轻微的 /j/ 滑音。" },
+        { "type": "失爆", "text": "at 的 /t/ 在 home 的 /h/ 前失去爆破。" },
+        { "type": "弱读", "text": "rather 的第二个音节 /ə/ 很轻，英音读 /ˈrɑːðə/ 不卷舌。" },
+        { "type": "语调", "text": "降调，重音在 rather 和 home 上。" }
+      ]
+    },
+    {
+      "id": "s12",
+      "text": "She's good at what she does.",
+      "zh": "她挺擅长她那一行的。",
+      "ipa_uk": "/ʃiːz ɡʊd ət wɒt ʃi ˈdʌz/",
+      "tips": [
+        { "type": "连读", "text": "good at 连读 /ˈɡʊdət/。" },
+        { "type": "失爆", "text": "what 的 /t/ 在 she 的 /ʃ/ 前不爆破。" },
+        { "type": "弱读", "text": "at 和 she 都轻读，只有 does 重读。" },
+        { "type": "语调", "text": "降调；does 重读表示强调「确实很擅长」。" }
+      ]
+    },
+    {
+      "id": "s13",
+      "text": "Don't worry about it.",
+      "zh": "别为这个担心。",
+      "ipa_uk": "/dəʊnt ˈwʌri əˈbaʊt ɪt/",
+      "tips": [
+        { "type": "连读", "text": "worry about 连读 /ˈwʌriəbaʊt/，y 和 a 之间加 /j/ 滑音。" },
+        { "type": "连读", "text": "about it 连读 /əˈbaʊtɪt/。" },
+        { "type": "失爆", "text": "Don't 的 /t/ 在 worry 的 /w/ 前只做口型。" },
+        { "type": "语调", "text": "安慰语气，降调、语速放慢。" }
+      ]
+    },
+    {
+      "id": "s14",
+      "text": "We should have left earlier.",
+      "zh": "我们本该早点走的。",
+      "ipa_uk": "/wi ʃʊd əv left ˈɜːliə/",
+      "tips": [
+        { "type": "省音", "text": "should have 缩成 /ˈʃʊdəv/，写作 should've。" },
+        { "type": "失爆", "text": "left 的 /t/ 在 earlier 的 /ɜː/ 前弱化，几乎不爆破。" },
+        { "type": "重音", "text": "重音在 left 和 earlier 的第一音节上。" },
+        { "type": "语调", "text": "带一点后悔的语气，句尾降调。" }
+      ]
+    },
+    {
+      "id": "s15",
+      "text": "Can you turn it down a bit?",
+      "zh": "你能把声音调小一点吗？",
+      "ipa_uk": "/kən juː tɜːn ɪt daʊn ə bɪt/",
+      "tips": [
+        { "type": "弱读", "text": "Can 弱读 /kən/，元音变成含糊的 /ə/。" },
+        { "type": "连读", "text": "turn it 连读 /ˈtɜːnɪt/；down a 连读 /ˈdaʊnə/。" },
+        { "type": "失爆", "text": "down 的 /n/ 与 a 相邻，气流不断；bit 的 /t/ 可读成喉塞音。" },
+        { "type": "语调", "text": "请求句用升调，bit 微微上扬，更礼貌。" }
+      ]
+    },
+    {
+      "id": "s16",
+      "text": "I'm looking forward to seeing you.",
+      "zh": "我很期待见到你。",
+      "ipa_uk": "/aɪm ˈlʊkɪŋ ˈfɔːwəd tə ˈsiːɪŋ juː/",
+      "tips": [
+        { "type": "失爆", "text": "forward 的 /d/ 在 to 前失去爆破。" },
+        { "type": "弱读", "text": "to 弱读作 /tə/，不读 /tuː/。" },
+        { "type": "连读", "text": "seeing you 连读 /ˈsiːɪŋjuː/，ŋ 后面自然带出 j。" },
+        { "type": "重音", "text": "核心重音在 seeing 上。" }
+      ]
+    },
+    {
+      "id": "s17",
+      "text": "What are you up to this weekend?",
+      "zh": "你这周末打算做什么？",
+      "ipa_uk": "/wɒt ə juː ʌp tə ðɪs ˌwiːkˈend/",
+      "tips": [
+        { "type": "连读", "text": "what are you 连读 /ˈwɒtəjuː/，are 弱读成 /ə/。" },
+        { "type": "失爆", "text": "up 的 /p/ 在 to 前只闭唇不送气。" },
+        { "type": "弱读", "text": "to 弱读 /tə/，this 轻读。" },
+        { "type": "语调", "text": "特殊疑问句降调，weekend 重读在第一个音节。" }
+      ]
+    },
+    {
+      "id": "s18",
+      "text": "It depends on the weather.",
+      "zh": "那要看天气。",
+      "ipa_uk": "/ɪt dɪˈpendz ɒn ðə ˈweðə/",
+      "tips": [
+        { "type": "连读", "text": "depends on 连读 /dɪˈpendzɒn/，z 和 ɒ 相接。" },
+        { "type": "弱读", "text": "the 在辅音前读 /ðə/，很轻。" },
+        { "type": "重音", "text": "depends 重音在第二音节 /dɪˈpendz/。" },
+        { "type": "语调", "text": "降调，weather 的重音在第一个音节 /ˈweðə/。" }
+      ]
+    },
+    {
+      "id": "s19",
+      "text": "Let's get started, shall we?",
+      "zh": "我们开始吧，好吗？",
+      "ipa_uk": "/lets ɡet ˈstɑːtɪd ʃəl wiː/",
+      "tips": [
+        { "type": "失爆", "text": "get 的 /t/ 在 started 的 /s/ 前完全不爆破，只停一下。" },
+        { "type": "弱读", "text": "shall 弱读 /ʃəl/，we 保持轻读。" },
+        { "type": "连读", "text": "started 的 /ɪd/ 与后面的逗号停顿分开，别连读。" },
+        { "type": "语调", "text": "反义疑问句尾 we 用升调。" }
+      ]
+    },
+    {
+      "id": "s20",
+      "text": "I couldn't agree more.",
+      "zh": "我完全同意。",
+      "ipa_uk": "/aɪ ˈkʊdnt əˈɡriː mɔː/",
+      "tips": [
+        { "type": "连读", "text": "couldn't agree 连读 /ˈkʊdntəˈɡriː/，t 直接滑向 ə。" },
+        { "type": "重音", "text": "couldn't 的 /nt/ 要读出来，agree 重音在第二音节。" },
+        { "type": "语调", "text": "降调，more 拖长一点表示强调。" },
+        { "type": "弱读", "text": "I 轻读，重心落在 agree 和 more 上。" }
+      ]
+    },
+    {
+      "id": "s21",
+      "text": "He's been under a lot of pressure.",
+      "zh": "他最近压力很大。",
+      "ipa_uk": "/hiːz biːn ˈʌndər ə lɒt əv ˈpreʃə/",
+      "tips": [
+        { "type": "连读", "text": "under a 连读 /ˈʌndərə/；lot of 连读 /ˈlɒtəv/。" },
+        { "type": "弱读", "text": "of 弱读作 /əv/，几乎变成 a 的音。" },
+        { "type": "重音", "text": "pressure 重音在第一音节 /ˈpreʃə/。" },
+        { "type": "语调", "text": "陈述句降调，pressure 放慢收尾。" }
+      ]
+    },
+    {
+      "id": "s22",
+      "text": "Do you happen to know the time?",
+      "zh": "你知道现在几点吗？",
+      "ipa_uk": "/də juː ˈhæpən tə nəʊ ðə ˈtaɪm/",
+      "tips": [
+        { "type": "同化", "text": "Do you 连读并同化成 /dʒə/，非常口语化。" },
+        { "type": "同化", "text": "happen to 中 /n/ 遇 /t/，n 的发音位置会移到齿龈，听着像 /ˈhæpəntə/。" },
+        { "type": "连读", "text": "know the 中 /n/ 与 /ð/ 相接，气流不断。" },
+        { "type": "语调", "text": "一般疑问句升调，time 上扬。" }
+      ]
+    },
+    {
+      "id": "s23",
+      "text": "Mind if I join you?",
+      "zh": "介意我加入吗？",
+      "ipa_uk": "/maɪnd ɪf aɪ dʒɔɪn juː/",
+      "tips": [
+        { "type": "连读", "text": "mind if I 连读 /ˈmaɪndɪfaɪ/，三个词一气呵成。" },
+        { "type": "同化", "text": "join you 的 /n/ + /j/ 会变成 /nj/ → 接近 /dʒ/ 的听感。" },
+        { "type": "失爆", "text": "mind 的 /d/ 在 if 前弱化为很轻的停顿。" },
+        { "type": "语调", "text": "升调，语气随意礼貌。" }
+      ]
+    },
+    {
+      "id": "s24",
+      "text": "It's not as easy as it looks.",
+      "zh": "这事没有看起来那么容易。",
+      "ipa_uk": "/ɪts nɒt əz ˈiːzi əz ɪt lʊks/",
+      "tips": [
+        { "type": "连读", "text": "as easy 连读 /əzˈiːzi/，z 与 iː 相接。" },
+        { "type": "连读", "text": "as it 连读 /əzɪt/。" },
+        { "type": "失爆", "text": "not 的 /t/ 在 as 前失去爆破。" },
+        { "type": "重音", "text": "easy 和 looks 重读，形成对比。" }
+      ]
+    }
+  ]
+}

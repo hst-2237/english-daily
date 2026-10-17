@@ -1,0 +1,2 @@
+# 英音生成（mp3）。edge-tts 会自动带上 aiohttp / certifi / tabulate 等依赖。
+edge-tts>=7.0
