@@ -21,8 +21,36 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python run.py --by-date --no-audio
+
+      - name: Diagnose (manual runs only)
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          KEY: ${{ secrets.SERVERCHAN_SENDKEY }}
+        run: |
+          python - <<'PY'
+          import json, os, urllib.error, urllib.request
+          key = os.environ.get("KEY", "").strip()
+          print("secret length :", len(key))
+          print("secret prefix :", key[:8])
+          print("expected      : SCT44218 / 40 chars")
+          url = f"https://sctapi.ftqq.com/{key}.send"
+          body = json.dumps({"title": "诊断 · 可忽略", "desp": "diagnose"}).encode()
+          req = urllib.request.Request(
+              url, data=body, headers={"Content-Type": "application/json"}, method="POST"
+          )
+          try:
+              with urllib.request.urlopen(req, timeout=20) as r:
+                  print("status:", r.status)
+                  print("body  :", r.read()[:400])
+          except urllib.error.HTTPError as exc:
+              print("HTTP", exc.code, exc.read()[:400])
+          except Exception as exc:
+              print("ERR", type(exc).__name__, exc)
+          PY
+
+      - name: Push today's sentence to WeChat
         env:
           ENGLISH_DAILY_CHANNEL: serverchan
           SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
           ENGLISH_DAILY_TZ: Asia/Shanghai
+        run: python run.py --by-date --no-audio
