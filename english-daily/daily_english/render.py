@@ -28,13 +28,13 @@ def _tip_badge(tip_type: str) -> str:
 def markdown(sentence: Sentence, ipa: str, tips: list[Tip], audio_lines: list[str], day: str) -> str:
     """推送给 Server酱 的正文（markdown）。
 
-    实测结论，改之前先看一眼：
-    1. Server酱 的消息详情页会完整渲染 markdown——标题、加粗、列表、链接都生效；
+    几点实测结论，改之前先看一眼：
+    1. Server酱 的消息详情页会完整渲染 markdown —— 标题、加粗、列表、链接都生效；
     2. 微信「服务通知」的卡片只显示标题，正文不进卡片，所以正文可以放心用 markdown；
-    3. 标题里绝对不能出现英文撇号 '，否则微信回 data format error，整条消息丢失。
+    3. 标题里绝对不能出现英文撇号 '，否则微信回 "data format error"，整条消息丢失。
     """
     lines: list[str] = []
-        lines += [f"**{sentence.text}**", "", sentence.zh, ""]
+    lines += [f"**{sentence.text}**", "", sentence.zh, ""]
     if ipa:
         lines += [f"`{ipa}`", ""]
     if tips:
