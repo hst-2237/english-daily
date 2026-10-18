@@ -26,24 +26,23 @@ def _tip_badge(tip_type: str) -> str:
 
 
 def markdown(sentence: Sentence, ipa: str, tips: list[Tip], audio_lines: list[str], day: str) -> str:
-    """给 Server酱 / 企业微信机器人用的 markdown 文本。"""
+    """给 Server酱 / 企业微信机器人用的纯文本。
+
+    服务号模板消息不渲染 markdown，这里只输出纯文本；
+    另外标题里不能出现英文撇号 '（Server酱 会因此被微信拒收）。
+    """
     lines = [
-        f"## 每日一句 · {day}",
-        "",
-        f"**{sentence.text}**",
-        "",
+        f"每日一句 · {day}",
+        sentence.text,
         sentence.zh,
-        "",
     ]
     if ipa:
-        lines += [f"`{ipa}`", ""]
+        lines.append(f"音标 {ipa}")
     if tips:
-        lines.append("**朗读要点**")
-        lines += [f"- 【{t.type}】{t.text}" for t in tips]
-        lines.append("")
-    if audio_lines:
-        lines.append("**跟读音频**")
-        lines += audio_lines
+        lines.append("朗读要点")
+        for i, t in enumerate(tips, 1):
+            lines.append(f"{i}. {t.type}：{t.text}")
+    lines += [line.lstrip("- ").strip() for line in audio_lines]
     return "\n".join(lines).strip()
 
 
