@@ -204,7 +204,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.no_push:
         print("\n已跳过推送（--no-push）。")
     else:
-        title = f"每日一句 · {sentence.text}"
+        title = f"每日一句 · {day}"
         try:
             channel = send(cfg, title, info["markdown"], info["html_snippet"])
         except PushError as exc:
