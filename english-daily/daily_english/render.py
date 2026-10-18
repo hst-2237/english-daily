@@ -26,23 +26,28 @@ def _tip_badge(tip_type: str) -> str:
 
 
 def markdown(sentence: Sentence, ipa: str, tips: list[Tip], audio_lines: list[str], day: str) -> str:
-    """给 Server酱 / 企业微信机器人用的纯文本。
+    """推送给 Server酱 的正文（markdown）。
 
-    服务号模板消息不渲染 markdown，这里只输出纯文本；
-    另外标题里不能出现英文撇号 '（Server酱 会因此被微信拒收）。
+    实测结论，改之前先看一眼：
+    1. Server酱 的消息详情页会完整渲染 markdown——标题、加粗、列表、链接都生效；
+    2. 微信「服务通知」的卡片只显示标题，正文不进卡片，所以正文可以放心用 markdown；
+    3. 标题里绝对不能出现英文撇号 '，否则微信回 data format error，整条消息丢失。
     """
-    lines = [
-        f"每日一句 · {day}",
-        sentence.text,
-        sentence.zh,
-    ]
+    lines: list[str] = []
+    lines += [f"**{sentence.text}**", sentence.zh, ""]
     if ipa:
-        lines.append(f"音标 {ipa}")
+        lines += [f"`{ipa}`", ""]
     if tips:
-        lines.append("朗读要点")
-        for i, t in enumerate(tips, 1):
-            lines.append(f"{i}. {t.type}：{t.text}")
-    lines += [line.lstrip("- ").strip() for line in audio_lines]
+        lines.append("**朗读要点**")
+        lines += [f"- {t.type}：{t.text}" for t in tips]
+        lines.append("")
+    for line in audio_lines:
+        text = line.lstrip("- ").strip()
+        label, _, url = text.partition("：")
+        if url.startswith("http"):
+            lines.append(f"[{label}]({url})")
+        else:
+            lines.append(text)
     return "\n".join(lines).strip()
 
 
