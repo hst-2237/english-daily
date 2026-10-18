@@ -34,7 +34,7 @@ def markdown(sentence: Sentence, ipa: str, tips: list[Tip], audio_lines: list[st
     3. 标题里绝对不能出现英文撇号 '，否则微信回 data format error，整条消息丢失。
     """
     lines: list[str] = []
-    lines += [f"**{sentence.text}**", sentence.zh, ""]
+        lines += [f"**{sentence.text}**", "", sentence.zh, ""]
     if ipa:
         lines += [f"`{ipa}`", ""]
     if tips:
